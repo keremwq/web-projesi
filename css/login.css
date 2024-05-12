@@ -11,3 +11,7 @@
 .btn:hover {
     border-color: currentColor;
 }
+
+.row {
+    height: 75vh;
+}

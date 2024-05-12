@@ -1,3 +1,13 @@
+<?php
+
+if(isset($_POST["submit"])) {
+    $name = $_POST['name'];
+    $mail = $_POST['mail'];
+    $message = $_POST['message'];
+
+    echo "<h2>$name</h2>";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,16 +58,16 @@
             <p style="text-align: center;">Aşağıdaki formu kullanarak bizimle iletişime geçebilirsiniz!</p>
             <br>
             <div class="col-md-6">
-                <form method="post" action="./iletisim.html" name="submit">
-                    <input type="text" name="name" required="" class="form-control" placeholder="Isım">
-                    <br>
-                    <input type="email" name="mail" required="" class="form-control" placeholder="Eposta">
-                    <br>
-                    <textarea rows="5" name="message" required="" placeholder="Mesaj" class="form-control"></textarea>
-                    <center>
-                        <button type="submit" class="btn btn-info">Gönder</button>
-                    </center>
-                </form>
+                <p><?php
+
+if(isset($_POST["submit"])) {
+    $name = $_POST['name'];
+    $mail = $_POST['mail'];
+    $message = $_POST['message'];
+
+    echo "<h2>$name</h2>";
+}
+?></p>
             </div>
         </div>
 
