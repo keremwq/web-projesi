@@ -1,3 +1,10 @@
+<?php
+    if (isset($_POST["submit"])) {
+        $username = $_POST["username"];
+        $pass = $_POST["pass"];
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,18 +51,14 @@
         </nav>
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center">
-                <div class="card bg-transparent">
-                    <div class="card-body">
-                        <form method="post" action="./login.php">
-                            <input type="text" name="username" id="" class="form-control my-3 py-2"
-                                placeholder="Kullanıcı Adı">
-                            <input type="text" name="pass" id="" class="form-control my-3 py-2" placeholder="Şifre">
-                            <button class="btn btn-light" name="submit">Giriş Yap <i
-                                    class="fa-solid fa-right-to-bracket"></i></button>
-                        </form>
-                        <p id="alert" style="color: red;"></p>
-                    </div>
-                </div>
+                
+                <h3><?php if ($username == "b231210074" and $pass = "1234") {
+                    echo "Hoşgeldiniz ".$username;}
+                    else {
+                        header("Location: login.html#wrong");
+                        exit;
+                    }    ?> </h3>
+
             </div>
         </div>
 
@@ -65,11 +68,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
             crossorigin="anonymous"></script>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/ed9336997a.js" crossorigin="anonymous"></script>
-
-        <script src="./login.js"></script>
     </div>
 </body>
 

@@ -4,10 +4,9 @@ if(isset($_POST["submit"])) {
     $name = $_POST['name'];
     $mail = $_POST['mail'];
     $message = $_POST['message'];
-
-    echo "<h2>$name</h2>";
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,17 +56,12 @@ if(isset($_POST["submit"])) {
             <h2 class="head">İletişime Geç</h2>
             <p style="text-align: center;">Aşağıdaki formu kullanarak bizimle iletişime geçebilirsiniz!</p>
             <br>
-            <div class="col-md-6">
-                <p><?php
-
-if(isset($_POST["submit"])) {
-    $name = $_POST['name'];
-    $mail = $_POST['mail'];
-    $message = $_POST['message'];
-
-    echo "<h2>$name</h2>";
-}
-?></p>
+            <center>
+            <div class="col-md-6" style="padding-bottom: 5px;">
+                <h3><?php echo "$name";?></h3>
+                <h3><?php echo "$mail";?></h3>
+                <h3><?php echo "$message";?></h3>
+            </center>
             </div>
         </div>
 
