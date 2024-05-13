@@ -1,0 +1,52 @@
+.body-animate {
+    background-color: aliceblue;
+    animation: color 15s ease infinite;
+}
+
+.body-black-animate {
+    background-color: black;
+    animation: colorblack 5s ease;
+}
+
+.body-return-animate {
+    background-color: black;
+    animation: colorreturn 5s ease;
+}
+
+.body-black {
+    background-color: black;
+}
+
+@keyframes color {
+    0% {
+        background-color: aliceblue;
+    }
+
+    50% {
+        background-color: rgb(215, 234, 250);
+    }
+
+    100% {
+        background-color: aliceblue;
+    }
+}
+
+@keyframes colorblack {
+    0% {
+        background-color: aliceblue;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+@keyframes colorreturn {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: aliceblue;
+    }
+}

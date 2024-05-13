@@ -5,6 +5,6 @@ $(document).ready(function () {
     if (pageHash == "wrong") {
         wrongAlertContainer.innerText = "Yanlış kullanıcı adı ya da şifre";
 
-        $("#alert").fadeOut(1000);
+        $("#alert").fadeOut(2500);
     }
 })
