@@ -20,7 +20,7 @@
     <link rel="icon" type="image/x-icon" href="/source/dikeylogo.ico">
 
 <body>
-    <div class="container">
+    <div class="container navbar-scroll body-animate" id="navbar">
     <nav class="navbar navbar-expand-sm navbar-light">
             <a href="/index.html" class="navbar-brand h1 anm" style="font-size: 34px;">Web Projesi</a>
 

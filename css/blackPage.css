@@ -9,6 +9,13 @@
     animation: colorblack 5s ease;
 }
 
+.navbar-scroll {
+    z-index: 1;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+}
+
 .body-return-animate {
     background-color: black;
     animation: colorreturn 5s ease;
