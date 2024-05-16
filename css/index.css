@@ -22,3 +22,39 @@ body {
     font-style: normal;
 
 }
+
+.card-shadow {
+    box-shadow: 2px 2px 20px 1px lightblue;
+}
+
+.card-shadow:hover {
+    animation: card-sizing 1s ease;
+    -webkit-animation-fill-mode: forwards;
+
+
+}
+
+.card-shadow:not(:hover) {
+    animation: de-card-sizing 0.5s ease;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes card-sizing {
+    0% {
+        transform: scale(1.00);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes de-card-sizing {
+    0% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1.00);
+    }
+}
