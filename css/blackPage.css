@@ -16,6 +16,10 @@
     top: 0;
 }
 
+.scrolling {
+    opacity: 96%;
+}
+
 .body-return-animate {
     background-color: black;
     animation: colorreturn 5s ease;

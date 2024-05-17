@@ -21,33 +21,34 @@
 
 <body>
     <div class="container navbar-scroll body-animate" id="navbar">
-    <nav class="navbar navbar-expand-sm navbar-light">
+    <nav class="navbar navbar-expand-sm navbar-light flex-column flex-lg-row">
             <a href="/index.html" class="navbar-brand h1 anm" style="font-size: 34px;">Web Projesi</a>
 
-            <div class="collapse navbar-collapse" style="justify-content: end;">
+            <div class="collapse navbar-collapse d-lg-flex" style="justify-content: end;" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active navbar-nav-big">
+
+                    <li class="nav-item active navbar-nav-big d-none d-sm-block">
+                        <a href="#" class="nav-link anm">
+                            Hobilerim
+                        </a>
+                    </li>
+                    <li class="nav-item active navbar-nav-big d-none d-sm-block">
+                        <a href="./iletisim.html" class="nav-link anm">
+                            ileteşim
+                        </a>
+                    </li>
+                    <li class="nav-item active navbar-nav-big d-none d-sm-block">
+                        <a href="./hakkimda.html" class="nav-link anm">
+                            hakkımda
+                        </a>
+                    </li>
+                    <li class="nav-item active navbar-nav-big d-none d-sm-block">
                         <button href="#" id="blackPage" class="nav-link"
                             style="border:none; background-color: transparent; margin-top: 2px;">
                             <i class="fa-solid fa-circle"></i>
                         </button>
                     </li>
-                    <li class="nav-item active navbar-nav-big">
-                        <a href="#" class="nav-link anm">
-                            link1
-                        </a>
-                    </li>
-                    <li class="nav-item active navbar-nav-big">
-                        <a href="./iletisim.html" class="nav-link anm">
-                            ileteşim
-                        </a>
-                    </li>
-                    <li class="nav-item active navbar-nav-big">
-                        <a href="./hakkimda.html" class="nav-link anm">
-                            hakkımda
-                        </a>
-                    </li>
-                    <li class="nav-item active navbar-nav-big">
+                    <li class="nav-item active navbar-nav-big d-none d-sm-block">
                         <a href="./login.html" class="nav-link anm">
                             <i class="fa-solid fa-right-to-bracket"></i>
                         </a>
