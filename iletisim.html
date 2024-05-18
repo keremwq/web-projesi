@@ -55,16 +55,18 @@
             <p style="text-align: center;">Aşağıdaki formu kullanarak bizimle iletişime geçebilirsiniz!</p>
             <br>
             <div class="col-md-6">
-                <form method="post" action="./iletisim.php">
-                    <input type="text" name="name" required="" class="form-control" placeholder="Isım">
+                <form method="POST" action="./iletisim.php" id="myForm">
+                    <input type="text" id="text" name="name" class="form-control" placeholder="Isım">
                     <br>
-                    <input type="email" name="mail" required="" class="form-control" placeholder="Eposta">
+                    <input type="email" id="email" name="mail" class="form-control" placeholder="Eposta">
                     <br>
-                    <textarea rows="5" name="message" required="" placeholder="Mesaj" class="form-control"></textarea>
+                    <textarea rows="5" id="message" name="message" placeholder="Mesaj" class="form-control"></textarea>
                     <center>
-                        <button id="button-submit" type="submit" class="btn btn-info" name="submit">Gönder</button>
+                        <button id="button-submit" class="btn btn-info" type="button" name="sent">Gönder</button>
+                        <button id="button-reset" class="btn btn-info" type="button">Temizle</button>
                     </center>
                 </form>
+
             </div>
         </div>
 
@@ -77,6 +79,7 @@
             crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/ed9336997a.js" crossorigin="anonymous"></script>
         <script src="blackPage.js"></script>
+        <script src="iletisim.js"></script>
 
 </body>
 
