@@ -85,7 +85,13 @@
 
         <div class="carousel slide" id="carouselBlock">
             <div class="carousel-inner">
-                <div class="carousel-item active" onclick="scrollFunc('selimiye',100)">
+                <div class="carousel-item active" onclick="scrollFunc('sehir',100)">
+                    <img src="source/slide/sehir.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption anm">
+                        <h1>Edirne</h1>
+                    </div>
+                </div>
+                <div class="carousel-item" onclick="scrollFunc('selimiye',100)">
                     <img src="source/slide/selimiye.jpg" alt="" class="d-block w-100">
                     <div class="carousel-caption anm">
                         <h1>Selimiye Camii</h1>
@@ -109,6 +115,9 @@
             </button>
         </div>
 
+
+
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12 anm">
@@ -116,7 +125,7 @@
                     <h3>Edirne, Türkiye'nin en batısında olan şehirdir. Marmara Bölgesi'nin Trakya kesiminde,
                         Yunanistan ve Bulgaristan sınırında yer almaktadır. Edirne, 1363'ten 1453'e kadar Osmanlı
                         İmparatorluğu'nun başkentiydi. 2020 sayımına göre toplam nüfusu 180.901'dir.</h3>
-                    <img src="source/slide/sehir.jpg" style="width: 100%;">
+                    <img src="source/slide/sehir.jpg" style="width: 100%;" id="sehir">
                     <p class=" d-flex justify-content-center pt-2">Edirne</p>
 
                     <h3>Osmanlı dönemi'ndeki adı Edrine (ادرنه) yunanca adından türetildi. İngilizcede Adrianople olarak
@@ -125,16 +134,16 @@
 
                     <h1 style="display: flex; justify-content: center;" class="anm" id="miras">Mirasımız</h1>
 
-                    <img src="source/slide/selimiye.jpg" style="width: 100%;">
-                    <p class=" d-flex justify-content-center pt-2" id="selimiye">Selimiye Camii</p>
+                    <img src="source/slide/selimiye.jpg" style="width: 100%;" id="selimiye">
+                    <p class=" d-flex justify-content-center pt-2">Selimiye Camii</p>
                     <h3>Selimiye Camiî, Osmanlı padişahı II. Selim döneminde Mimar Sinan'ın yaptığı ve Osmanlı'nın
                         önceki başkenti Edirne'de bulunan bir külliyedir. Mimar Sinan'ın 80 yaşında yaptığı ve "ustalık
                         eserim" şeklinde nitelendirdiği Selimiye Camii, gerek Mimar Sinan'ın, gerek Osmanlı
                         mimârîsinin en önemli eserleri arasında sayılır</h3>
 
 
-                    <img src="source/slide/saraclar.jpg" style="width: 100%;">
-                    <p class=" d-flex justify-content-center pt-2" id="saraclar">Saraçlar Caddesi</p>
+                    <img src="source/slide/saraclar.jpg" style="width: 100%;" id="saraclar">
+                    <p class=" d-flex justify-content-center pt-2">Saraçlar Caddesi</p>
                     <h3>Edirne Çarşısının bulunduğu merkezi yerdir. Kapalı Ali Paşa çarşısı, dükkanlar vb. birçok yere
                         Saraçlar
                         Caddesi ile ulaşılır.</h3>
@@ -184,7 +193,7 @@
             const element = document.getElementById(string).getBoundingClientRect()
             setTimeout(function () {
                 scrollTo({
-                    top: element.top - 200,
+                    top: element.top - 100,
                     behavior: "smooth",
                 })
             }, delay)
@@ -198,6 +207,17 @@
                 })
             }, delay)
         }
+
+        /*window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                document.getElementsByClassName("left-order").disabled = false
+                document.getElementsByClassName("left-order").style.display = "none"
+            } else {
+                document.getElementsByClassName("left-order").disabled = true
+                document.getElementsByClassName("left-order").style.display = ""
+            }
+        })*/
+
     </script>
 </body>
 

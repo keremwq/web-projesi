@@ -66,7 +66,7 @@
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center">
                 
-                <h3 class="anm"><?php if ($username == "b231210074@sabis.sakarya.edu.tr" && $pass == "1234") {
+                <h3 class="anm"><?php if ($username == "b231210074@sabis.sakarya.edu.tr" && $pass == "b231210074") {
                     echo "Hoşgeldiniz ".$username;}
                     else {
                         header("Location: login.html#wrong");

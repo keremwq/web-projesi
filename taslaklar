@@ -4,3 +4,32 @@
     önceki başkenti Edirne'de bulunan bir külliyedir. Mimar Sinan'ın 80 yaşında yaptığı ve "ustalık
     eserim" şeklinde nitelendirdiği Selimiye Camii, gerek Mimar Sinan'ın, gerek Osmanlı
     mimârîsinin en önemli eserleri arasında sayılır</h2>
+
+<!---><div class="left-order container">
+            <div class="row" onclick="scrollFunc('navbar',100)"><i class="fa-solid fa-up-long anm"
+                    style="border: 5px red solid"></i></div>
+
+            <div class="row" onclick="scrollFunc('lozan',100)"><i class="fa-solid fa-down-long anm"
+                    style="border: 5px red solid" onclicK=""></i></div>
+        </div>
+
+
+.left-order {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            z-index: 1000;
+            width: 100px;
+            height: 200px;
+        }
+
+        .left-order i {
+            font-size: 3em;
+        }
+
+        .left-order .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }

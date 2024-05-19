@@ -44,6 +44,12 @@ function ControlText() {
         return
     }
 
+
+    if (emailPartDotControll == 1) {
+        alert("Geçersiz email.")
+        return
+    }
+
     form.submit()
 
 }

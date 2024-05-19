@@ -63,15 +63,12 @@
             </div>
         </nav>
 
-        <div class="col-12 contact">
-            <h2 class="head">İletişime Geç</h2>
-            <p style="text-align: center;">Aşağıdaki formu kullanarak bizimle iletişime geçebilirsiniz!</p>
-            <br>
+        <div class="col-12 contact" id="blackForm" style="color: aliceblue;">
             <center>
             <div class="col-md-6" style="padding-bottom: 5px;">
-                <h3><?php echo "$name";?></h3>
-                <h3><?php echo "$mail";?></h3>
-                <h3><?php echo "$message";?></h3>
+                <h3 class="anm" style="color: black;"><?php echo "$name";?></h3>
+                <h3 class="anm" style="color: black;"><?php echo "$mail";?></h3>
+                <h3 class="anm" style="color: black;"><?php echo "$message";?></h3>
             </center>
             </div>
         </div>
