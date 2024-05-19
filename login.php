@@ -1,8 +1,6 @@
 <?php
-    if (isset($_POST["submit"])) {
-        $username = $_POST["username"];
-        $pass = $_POST["pass"];
-    }
+    $username = $_POST["username"];
+    $pass = $_POST["pass"];
 ?>
 
 <!DOCTYPE html>
@@ -19,36 +17,43 @@
     <link href='./css/login.css' rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/source/dikeylogo.ico">
 
-<body>
+<body class="body-animate">
     <div class="container navbar-scroll body-animate" id="navbar">
     <nav class="navbar navbar-expand-sm navbar-light flex-column flex-lg-row">
             <a href="/index.html" class="navbar-brand h1 anm" style="font-size: 34px;">Web Projesi</a>
-
-            <div class="collapse navbar-collapse d-lg-flex" style="justify-content: end;" id="navbarNav">
-                <ul class="navbar-nav">
-
-                    <li class="nav-item active navbar-nav-big d-none d-sm-block">
-                        <a href="#" class="nav-link anm">
-                            Hobilerim
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Navigasyon">
+                <span><i class="fa-solid fa-bars fa-xl anm"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle anm" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Şehir
                         </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="./sehir.html">Şehirim</a>
+                            <a class="dropdown-item" href="./sehir.html#mirasimiz" onclick="scrollFunc(100)">Mirasımız</a>
+                        </div>
                     </li>
-                    <li class="nav-item active navbar-nav-big d-none d-sm-block">
+                    <li class="nav-item active">
                         <a href="./iletisim.html" class="nav-link anm">
-                            ileteşim
+                            İletişim
                         </a>
                     </li>
-                    <li class="nav-item active navbar-nav-big d-none d-sm-block">
+                    <li class="nav-item active">
                         <a href="./hakkimda.html" class="nav-link anm">
-                            hakkımda
+                            Hakkımda
                         </a>
                     </li>
-                    <li class="nav-item active navbar-nav-big d-none d-sm-block">
+                    <li class="nav-item active">
                         <button href="#" id="blackPage" class="nav-link"
                             style="border:none; background-color: transparent; margin-top: 2px;">
                             <i class="fa-solid fa-circle"></i>
                         </button>
                     </li>
-                    <li class="nav-item active navbar-nav-big d-none d-sm-block">
+                    <li class="nav-item active">
                         <a href="./login.html" class="nav-link anm">
                             <i class="fa-solid fa-right-to-bracket"></i>
                         </a>
@@ -56,11 +61,12 @@
                 </ul>
             </div>
         </nav>
-
+    </div>
+    <div class="container">
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center">
                 
-                <h3 class="anm"><?php if ($username == "b231210074" && $pass == "1234") {
+                <h3 class="anm"><?php if ($username == "b231210074@sabis.sakarya.edu.tr" && $pass == "1234") {
                     echo "Hoşgeldiniz ".$username;}
                     else {
                         header("Location: login.html#wrong");
@@ -69,7 +75,7 @@
 
             </div>
         </div>
-
+                </div>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>

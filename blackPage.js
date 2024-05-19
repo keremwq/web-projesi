@@ -3,12 +3,18 @@ const navLinks = document.getElementsByClassName("anm")
 const borders = document.getElementsByClassName("border-anm")
 const navbarBackground = document.getElementById("navbar")
 const blackPage = document.getElementById("blackPage")
+const blackForm = document.getElementById("blackForm")
 
 const documentTheme = localStorage.getItem("theme")
 
 if (documentTheme == "body-black") {
     document.body.className = "body-black d-flex flex-column min-vh-100"
     navbarBackground.className = "container navbar-scroll body-black"
+
+    try { blackForm.style.backgroundColor = "black"; } catch (error) {
+        console.log(error)
+    }
+
 
     for (i = 0; i < navLinks.length; i++) {
         navLinks[i].style.color = "white"
@@ -39,7 +45,9 @@ async function backgroundColoring() {
             borders[i].style.borderColor = "white"
         }
 
-
+        try { blackForm.style.backgroundColor = "black"; } catch (error) {
+            console.log(error)
+        }
 
         blackPage.innerHTML = "<i class='fa-regular fa-circle' style='color: #ffffff;'></i>"
 
@@ -63,7 +71,9 @@ async function backgroundColoring() {
             borders[i].style.borderColor = "black"
         }
 
-
+        try { blackForm.style.backgroundColor = "aliceblue"; } catch (error) {
+            console.log(error)
+        }
 
         blackPage.innerHTML = "<i class='fa-solid fa-circle'></i>"
 

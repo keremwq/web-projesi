@@ -38,6 +38,12 @@ function ControlText() {
         return
     }
 
+    let emailPartDotControll = emailPart.indexOf(".")
+    if (emailPartDotControll == emailPart.length - 1) {
+        alert("Geçersiz email.")
+        return
+    }
+
     form.submit()
 
 }

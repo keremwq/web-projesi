@@ -18,10 +18,10 @@ function createElements(response) {
     const blok = document.getElementById("filmler")
     response.forEach(element => {
         const blokDiv = document.createElement("div");
-        blokDiv.className = "col-12 col-md-6 col-lg-2 mb-4";  // Bootstrap grid sistemini kullanarak sütunlar oluşturun
+        blokDiv.className = "col-6 col-md-6 col-lg-2 mb-4";  // Bootstrap grid sistemini kullanarak sütunlar oluşturun
         blokDiv.innerHTML = `
             <div class="card h-100">
-                <img src="https://image.tmdb.org/t/p/w200${element.poster_path}" class="card-img-top" alt="${element.title} poster">
+                <img src="https://image.tmdb.org/t/p/w200${element.poster_path}" class="card-img-top custom-max-height" alt="${element.title} poster">
                 <div class="card-body">
                     <h5 class="card-title">${element.title}</h5>
                     <p class="card-text"><strong>Çıktığı Tarih:${element.release_date.substring(0, 4)}</p>
